@@ -5,7 +5,7 @@ defineClass('ViewController', {
     view.setBackgroundColor(UIColor.greenColor())
     var label = UILabel.alloc().initWithFrame(view.bounds());
     label.setText("JSPatch");
-    label.setTextAlignment(NSTextAlignmentCenter);
+    label.setTextAlignment(1);
     view.addSubview(label);
     return view;
   }
