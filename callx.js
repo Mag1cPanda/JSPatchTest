@@ -1,7 +1,5 @@
-// callx.js
 require('UIView, UIColor, UILabel')
 defineClass('ViewController', {
-  // 替换这个 -genView 方法
   genView: function() {
     var view = self.ORIGgenView();
     view.setBackgroundColor(UIColor.greenColor())
