@@ -10,3 +10,10 @@ defineClass('ViewController', {
     return view;
   }
 });
+
+defineClass('TestViewController', {
+    viewDidLoad: function() {
+        self.super().viewDidLoad();
+        self.view().setBackgroundColor(UIColor.redColor());
+    },
+});
