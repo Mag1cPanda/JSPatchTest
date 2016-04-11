@@ -11,12 +11,6 @@ defineClass('ViewController', {
   }
 });
 
-defineClass('TestViewController', {
-    viewDidLoad: function() {
-        self.super().viewDidLoad();
-        self.view().setBackgroundColor(UIColor.redColor());
-    },
-});
 
 defineClass('TestViewController', {
             tableView_cellForRowAtIndexPath: function(tableView, indexPath) {
