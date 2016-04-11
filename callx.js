@@ -1,3 +1,12 @@
+require('UIView,UIColor');
+defineClass('ViewController', {
+    genView: function() {
+        var view = UIView.alloc().initWithFrame(CGRectMake(20, 100, 200, 200));
+        view.setBackgroundColor(UIColor.greenColor());
+        return view;
+    },
+});
+
 require('NSString,UIColor');
 defineClass('TestViewController', {
     tableView_cellForRowAtIndexPath: function(tableView, indexPath) {
