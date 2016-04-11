@@ -1,4 +1,4 @@
-require('UIView,UIColor');
+require('UIView,UIColor,NSString');
 defineClass('ViewController', {
     genView: function() {
         var view = UIView.alloc().initWithFrame(CGRectMake(20, 100, 200, 200));
@@ -7,7 +7,6 @@ defineClass('ViewController', {
     },
 });
 
-require('NSString,UIColor');
 defineClass('TestViewController', {
     tableView_cellForRowAtIndexPath: function(tableView, indexPath) {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell");
