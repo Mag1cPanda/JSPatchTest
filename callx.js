@@ -1,4 +1,4 @@
-require('UIView, UIColor, UILabel,NSString')
+require('UIView, UIColor, UILabel')
 defineClass('ViewController', {
   genView: function() {
     var view = self.ORIGgenView();
