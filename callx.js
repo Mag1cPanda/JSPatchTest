@@ -11,13 +11,12 @@ defineClass('ViewController', {
   }
 });
 
-
 defineClass('TestViewController', {
-            tableView_cellForRowAtIndexPath: function(tableView, indexPath) {
-                (UITableViewCell * ) tableView: (UITableView * ) tableView cellForRowAtIndexPath: (NSIndexPath * (UITableViewCell * ) tableView: (UITableView * ) tableView cellForRowAtIndexPath: (NSIndexPath * ) indexPath {
-                        var cell = tableView.dequeueReusableCellWithIdentifier("cell");
-                        cell.textLabel().setText(NSString.stringWithFormat("Cell%zi", indexPath.row()));
-                        cell.contentView().setBackgroundColor(UIColor.blueColor());
-                        cell.setSelectionStyle(UITableViewCellSelectionStyleNone)
-                    },
-                });
+    tableView_cellForRowAtIndexPath: function(tableView, indexPath) {
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell");
+        cell.textLabel().setText(NSString.stringWithFormat("Cell%zi", indexPath.row()));
+        cell.contentView().setBackgroundColor(UIColor.blueColor());
+        cell.setSelectionStyle(UITableViewCellSelectionStyleNone);
+        return cell;
+    },
+});
